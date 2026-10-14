@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6558e8">
+  <title>NovaTools — Useful tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NovaTools home"><span class="brand-mark">✦</span><span>Nova<span class="brand-accent">Tools</span></span></a>
+    <nav class="nav-links"><a href="#tools" data-i18n="navTools">Tools</a><a href="#about" data-i18n="navAbout">About</a></nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Language"><option value="fr">FR</option><option value="ar">العربية</option></select>
+      <button class="btn btn-ghost" id="loginOpen" data-i18n="login">Log in</button>
+      <button class="avatar" id="profileBtn" title="Profile" hidden>U</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">YOUR EVERYDAY DIGITAL TOOLKIT</span></div>
+      <h1 data-i18n="heroTitle">Small tools.<br><span class="gradient-text">Big possibilities.</span></h1>
+      <p data-i18n="heroSub">A clean, handy collection of tools to make your day a little easier.</p>
+      <a class="btn btn-primary hero-cta" href="#tools"><span data-i18n="explore">Explore tools</span><span>↘</span></a>
+      <div class="hero-stats"><div><strong>06</strong><span data-i18n="statTools">Useful tools</span></div><i></i><div><strong>02</strong><span data-i18n="statLang">Languages</span></div><i></i><div><strong>∞</strong><span data-i18n="statIdeas">Ideas to create</span></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="art-card card-a">✦<small>CREATE</small></div><div class="art-card card-b">⌘<small>ORGANIZE</small></div><div class="art-core">N<span>+</span></div><div class="spark spark-a">✧</div><div class="spark spark-b">✦</div></div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading"><div><div class="eyebrow"><span class="dot"></span><span data-i18n="toolkit">THE TOOLKIT</span></div><h2 data-i18n="toolsTitle">What do you need today?</h2><p data-i18n="toolsSub">Pick a tool and get straight to it.</p></div><div class="search-wrap"><span>⌕</span><input id="toolSearch" type="search" data-i18n-placeholder="search" placeholder="Search tools…"></div></div>
+      <div class="tool-grid">
+        <article class="tool-card" data-tool="notes" data-search="notes text editor notes كتابة ملاحظات"><div class="tool-icon lilac">✎</div><span class="tool-tag" data-i18n="tagWrite">WRITE</span><h3 data-i18n="notesTitle">Quick Notes</h3><p data-i18n="notesDesc">Capture an idea before it disappears.</p><button class="text-link launch" data-open="notes"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+        <article class="tool-card" data-tool="password" data-search="password generator sécurité كلمة السر"><div class="tool-icon mint">⌁</div><span class="tool-tag" data-i18n="tagPrivacy">PRIVACY</span><h3 data-i18n="passwordTitle">Password Maker</h3><p data-i18n="passwordDesc">Create a strong random password.</p><button class="text-link launch" data-open="password"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+        <article class="tool-card" data-tool="counter" data-search="word counter count words compteur mots عداد الكلمات"><div class="tool-icon peach">≡</div><span class="tool-tag" data-i18n="tagText">TEXT</span><h3 data-i18n="counterTitle">Word Counter</h3><p data-i18n="counterDesc">Count words, characters and lines.</p><button class="text-link launch" data-open="counter"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+        <article class="tool-card" data-tool="converter" data-search="unit converter conversion تحويل الوحدات"><div class="tool-icon blue">⇄</div><span class="tool-tag" data-i18n="tagConvert">CONVERT</span><h3 data-i18n="converterTitle">Unit Converter</h3><p data-i18n="converterDesc">Convert length, weight and temperature.</p><button class="text-link launch" data-open="converter"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+        <article class="tool-card" data-tool="timer" data-search="timer stopwatch minuterie مؤقت"><div class="tool-icon yellow">◷</div><span class="tool-tag" data-i18n="tagFocus">FOCUS</span><h3 data-i18n="timerTitle">Focus Timer</h3><p data-i18n="timerDesc">Set a little time aside to focus.</p><button class="text-link launch" data-open="timer"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+        <article class="tool-card" data-tool="qrcode" data-search="qr code generator رابط رمز"><div class="tool-icon pink">▦</div><span class="tool-tag" data-i18n="tagShare">SHARE</span><h3 data-i18n="qrTitle">QR Link</h3><p data-i18n="qrDesc">Turn a link into a scannable QR code.</p><button class="text-link launch" data-open="qrcode"><span data-i18n="openTool">Open tool</span> <span>↗</span></button></article>
+      </div>
+      <p class="no-results" id="noResults" hidden data-i18n="noResults">No tools found. Try another search.</p>
+    </section>
+    <section class="bottom-banner" id="about"><div class="banner-icon">✦</div><div><h2 data-i18n="bannerTitle">Made for your everyday flow.</h2><p data-i18n="bannerSub">Simple, useful, and ready whenever you are.</p></div><a href="#tools" class="banner-arrow">↗</a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">✦</span><span>Nova<span class="brand-accent">Tools</span></span></a><span data-i18n="footer">A little more useful, every day.</span><span>© <span id="year"></span> NovaTools</span></footer>
+
+  <div class="modal-backdrop" id="toolModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="modal-kicker" data-i18n="interactiveTool">INTERACTIVE TOOL</div><h2 id="modalTitle">Tool</h2><div id="toolContent"></div></section></div>
+  <div class="modal-backdrop" id="loginModal" hidden><section class="modal login-modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle"><button class="modal-close" data-close-login aria-label="Close">×</button><div class="login-symbol">✦</div><h2 id="loginTitle" data-i18n="welcome">Welcome back</h2><p data-i18n="loginSub">Sign in locally to personalize this demo.</p><form id="loginForm"><label for="username" data-i18n="yourName">Your name</label><input id="username" required maxlength="40" autocomplete="name" placeholder="e.g. Alex"><label for="email" data-i18n="emailLabel">Email (optional)</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com"><button class="btn btn-primary full" type="submit" data-i18n="continue">Continue</button></form><p class="fine-print" data-i18n="loginNote">Demo sign-in only. No account or password is sent to a server.</p></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
